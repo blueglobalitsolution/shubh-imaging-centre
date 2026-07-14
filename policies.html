@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy and Terms of Service for Shubh Imaging Centre, Rajkot. Learn how we handle your personal and medical data.">
+    <title>Privacy &amp; Terms | Shubh Imaging Centre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=switzer:400,500,600,700" rel="stylesheet">
+    <style>
+        /* ── Design tokens (mirrors main styles.css) ── */
+        :root {
+            --accent:    #17dec3;
+            --secondary: #08685b;
+            --dark:      #0a0a0a;
+            --dark2:     #111111;
+            --white:     #ffffff;
+            --off-white: #f7f7f7;
+            --muted:     #878787;
+            --border:    #e8e8e8;
+            --text:      #000000;
+            --font-head: 'Switzer', 'Inter', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --container: 1240px;
+            --nav-h:     72px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.65;
+            color: var(--text);
+            background: var(--white);
+        }
+
+        img { display: block; max-width: 100%; }
+        a { text-decoration: none; color: inherit; }
+
+        .container {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ── NAVBAR ── */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            height: var(--nav-h);
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .navbar-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: var(--nav-h);
+        }
+
+        .logo-img {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--muted);
+            letter-spacing: 0.02em;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: var(--secondary); }
+        .back-link svg { flex-shrink: 0; }
+
+        /* ── PAGE HERO ── */
+        .page-hero {
+            background: var(--dark);
+            padding: 72px 0 64px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(23,222,195,0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(23,222,195,0.04) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+
+        .page-hero-inner {
+            position: relative;
+        }
+
+        .page-hero-eyebrow {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+
+        .page-hero h1 {
+            font-family: var(--font-head);
+            font-size: clamp(36px, 5vw, 60px);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.08;
+            color: var(--white);
+            margin-bottom: 16px;
+        }
+
+        .page-hero p {
+            font-size: 15px;
+            color: rgba(255,255,255,0.5);
+            max-width: 500px;
+        }
+
+        /* ── TAB NAV ── */
+        .tab-bar {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: var(--nav-h);
+            z-index: 90;
+        }
+
+        .tab-bar-inner {
+            display: flex;
+            gap: 0;
+        }
+
+        .tab-btn {
+            padding: 18px 28px;
+            font-family: var(--font-body);
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--muted);
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            transition: color 0.2s, border-color 0.2s;
+            letter-spacing: 0.01em;
+        }
+
+        .tab-btn:hover { color: var(--text); }
+        .tab-btn.active { color: var(--secondary); border-bottom-color: var(--accent); }
+
+        /* ── POLICY CONTENT ── */
+        .policy-body {
+            padding: 72px 0 96px;
+        }
+
+        .policy-layout {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 64px;
+            align-items: start;
+        }
+
+        /* Sidebar TOC */
+        .toc {
+            position: sticky;
+            top: calc(var(--nav-h) + 57px + 32px);
+        }
+
+        .toc-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .toc-list a {
+            display: block;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--muted);
+            padding: 7px 12px;
+            border-left: 2px solid var(--border);
+            transition: color 0.2s, border-color 0.2s, background 0.2s;
+        }
+
+        .toc-list a:hover {
+            color: var(--secondary);
+            border-left-color: var(--accent);
+            background: rgba(23,222,195,0.04);
+        }
+
+        /* Policy tab panels */
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; }
+
+        /* Section headings */
+        .policy-section {
+            padding-bottom: 48px;
+            margin-bottom: 48px;
+            border-bottom: 1px solid var(--border);
+        }
+        .policy-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .policy-section h2 {
+            font-family: var(--font-head);
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--text);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 28px;
+            height: 28px;
+            padding: 0 6px;
+            background: var(--accent);
+            color: var(--dark);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            flex-shrink: 0;
+        }
+
+        .policy-section p {
+            font-size: 15px;
+            color: #444;
+            line-height: 1.8;
+            margin-bottom: 14px;
+        }
+
+        .policy-section p:last-child { margin-bottom: 0; }
+
+        .policy-section ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 16px 0;
+        }
+
+        .policy-section ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 15px;
+            color: #444;
+            line-height: 1.65;
+        }
+
+        .policy-section ul li::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            background: var(--accent);
+            flex-shrink: 0;
+            margin-top: 9px;
+        }
+
+        .policy-section a {
+            color: var(--secondary);
+            font-weight: 500;
+            border-bottom: 1px solid rgba(8,104,91,0.25);
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .policy-section a:hover {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        /* Highlight box */
+        .highlight-box {
+            background: rgba(23,222,195,0.07);
+            border-left: 3px solid var(--accent);
+            padding: 18px 20px;
+            margin: 20px 0;
+            font-size: 14px;
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ── FOOTER ── */
+        .footer {
+            background: var(--dark2);
+            border-top: 1px solid #222;
+            padding: 40px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-logo-img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            opacity: 0.7;
+        }
+
+        .footer-copy {
+            font-size: 12px;
+            color: rgba(255,255,255,0.3);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            font-size: 12px;
+            color: rgba(255,255,255,0.35);
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: var(--accent); }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+            .policy-layout { grid-template-columns: 1fr; }
+            .toc { display: none; }
+            .tab-btn { padding: 16px 16px; font-size: 13px; }
+            .page-hero { padding: 56px 0 48px; }
+            .footer-inner { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html">
+                <img src="media/site-logo.png" alt="Shubh Imaging Centre" class="logo-img">
+            </a>
+            <a href="index.html" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                Back to Home
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container page-hero-inner">
+            <div class="page-hero-eyebrow">Legal</div>
+            <h1>Privacy &amp; Terms</h1>
+            <p>Understand how Shubh Imaging Centre collects, uses, and protects your personal information, and the terms governing use of our services.</p>
+        </div>
+    </section>
+
+    <!-- Tab Bar -->
+    <div class="tab-bar">
+        <div class="container tab-bar-inner">
+            <button class="tab-btn active" onclick="switchTab('privacy', this)" id="btn-privacy">
+                Privacy Policy
+            </button>
+            <button class="tab-btn" onclick="switchTab('terms', this)" id="btn-terms">
+                Terms of Service
+            </button>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <main class="policy-body">
+        <div class="container">
+
+            <!-- ══════════════════════════════════
+                 PRIVACY POLICY TAB
+            ══════════════════════════════════ -->
+            <div class="tab-panel active" id="panel-privacy">
+                <div class="policy-layout">
+
+                    <!-- Sidebar TOC -->
+                    <aside class="toc">
+                        <div class="toc-title">On this page</div>
+                        <ul class="toc-list">
+                            <li><a href="#pp-1">Information We Collect</a></li>
+                            <li><a href="#pp-2">How We Use Your Information</a></li>
+                            <li><a href="#pp-3">Medical Data &amp; Confidentiality</a></li>
+                            <li><a href="#pp-4">Information Sharing</a></li>
+                            <li><a href="#pp-5">Data Security</a></li>
+                            <li><a href="#pp-6">Cookies &amp; Website</a></li>
+                            <li><a href="#pp-7">Your Rights</a></li>
+                            <li><a href="#pp-8">Children's Privacy</a></li>
+                            <li><a href="#pp-9">Policy Changes</a></li>
+                            <li><a href="#pp-10">Contact Us</a></li>
+                        </ul>
+                    </aside>
+
+                    <!-- Policy Text -->
+                    <article>
+                        <p style="font-size:13px;color:var(--muted);margin-bottom:48px;">Last updated: July 14, 2026 &nbsp;·&nbsp; Effective immediately</p>
+
+                        <div class="highlight-box">
+                            This Privacy Policy explains how <strong>Shubh Imaging Centre</strong> (referred to as "we", "us", or "our"), located at 102, R.K. Prime Plus, Near Balaji Hall, 150ft Ring Road, Rajkot — 360001, Gujarat, India, collects, uses, and safeguards your personal and medical information in accordance with applicable Indian healthcare and data protection laws.
+                        </div>
+
+                        <div class="policy-section" id="pp-1">
+                            <h2><span class="section-num">01</span>Information We Collect</h2>
+                            <p>When you register as a patient, book an appointment, or contact us, we may collect the following categories of information:</p>
+                            <ul>
+                                <li><strong>Personal identifiers:</strong> Full name, date of birth, gender, government ID (Aadhaar, etc.)</li>
+                                <li><strong>Contact details:</strong> Phone number, email address, residential address</li>
+                                <li><strong>Medical history:</strong> Previous diagnoses, medications, allergies, and symptoms relevant to your diagnostic test</li>
+                                <li><strong>Diagnostic results:</strong> Imaging scans (MRI, CT, X-Ray), lab reports, sonography findings, and pathology results</li>
+                                <li><strong>Payment information:</strong> Transaction records (we do not store card/UPI credentials)</li>
+                                <li><strong>Referring physician details:</strong> Doctor's name and contact, when provided</li>
+                                <li><strong>Website usage data:</strong> Pages visited, browser type, approximate location (for analytics only)</li>
+                            </ul>
+                        </div>
+
+                        <div class="policy-section" id="pp-2">
+                            <h2><span class="section-num">02</span>How We Use Your Information</h2>
+                            <p>Your information is used strictly for the following purposes:</p>
+                            <ul>
+                                <li>Scheduling, confirming, and managing appointments</li>
+                                <li>Performing and reporting on diagnostic tests you request</li>
+                                <li>Communicating test results to you and/or your referring physician</li>
+                                <li>Processing payments and maintaining billing records</li>
+                                <li>Sending appointment reminders via SMS or WhatsApp</li>
+                                <li>Improving the quality of our diagnostic services</li>
+                                <li>Complying with legal and regulatory obligations</li>
+                            </ul>
+                            <p>We will <strong>never</strong> use your data for unsolicited marketing from third parties, nor sell your information to any external party.</p>
+                        </div>
+
+                        <div class="policy-section" id="pp-3">
+                            <h2><span class="section-num">03</span>Medical Data &amp; Confidentiality</h2>
+                            <p>All medical information — including imaging results, lab reports, and health history — is treated as strictly confidential. Access to your medical records is limited to:</p>
+                            <ul>
+                                <li>Radiologists and pathologists directly involved in your care</li>
+                                <li>Your referring physician (only if you have explicitly authorised sharing)</li>
+                                <li>Administrative staff with a legitimate need for billing or scheduling</li>
+                            </ul>
+                            <div class="highlight-box">
+                                Your diagnostic reports are your property. You may request a physical or digital copy at any time by contacting our front desk or emailing us at <a href="mailto:Shubhimagingcentre@gmail.com">Shubhimagingcentre@gmail.com</a>.
+                            </div>
+                        </div>
+
+                        <div class="policy-section" id="pp-4">
+                            <h2><span class="section-num">04</span>Information Sharing</h2>
+                            <p>We do not sell, trade, or rent your personal information. We may share limited information only in the following circumstances:</p>
+                            <ul>
+                                <li><strong>With your consent:</strong> When you authorise us to share results with a specific doctor or hospital</li>
+                                <li><strong>Legal obligation:</strong> When required by court order, government authority, or applicable Indian law (e.g., public health reporting)</li>
+                                <li><strong>Medical emergency:</strong> When your safety or the safety of others requires disclosure</li>
+                                <li><strong>Service providers:</strong> Trusted IT vendors who help us operate our systems, under strict confidentiality agreements</li>
+                            </ul>
+                        </div>
+
+                        <div class="policy-section" id="pp-5">
+                            <h2><span class="section-num">05</span>Data Security</h2>
+                            <p>We implement industry-standard security measures to protect your information:</p>
+                            <ul>
+                                <li>Encrypted digital storage for all patient records and imaging files</li>
+                                <li>Password-protected access systems with role-based permissions</li>
+                                <li>Physical security at our premises (CCTV, restricted access to server areas)</li>
+                                <li>Regular staff training on data confidentiality</li>
+                                <li>Secure deletion of records after statutory retention periods</li>
+                            </ul>
+                            <p>While we take all reasonable precautions, no system is 100% secure. We encourage you not to share your patient ID or report access credentials with others.</p>
+                        </div>
+
+                        <div class="policy-section" id="pp-6">
+                            <h2><span class="section-num">06</span>Cookies &amp; Website Usage</h2>
+                            <p>Our website uses minimal, non-intrusive technologies:</p>
+                            <ul>
+                                <li><strong>Essential cookies:</strong> Required for the website to function (form submissions, page navigation)</li>
+                                <li><strong>Analytics:</strong> Aggregated, anonymised data to understand how visitors use the site — no personal data is collected</li>
+                            </ul>
+                            <p>You can disable cookies in your browser settings. This will not affect your ability to access our diagnostic services in person.</p>
+                        </div>
+
+                        <div class="policy-section" id="pp-7">
+                            <h2><span class="section-num">07</span>Your Rights</h2>
+                            <p>You have the right to:</p>
+                            <ul>
+                                <li><strong>Access</strong> the personal and medical data we hold about you</li>
+                                <li><strong>Correct</strong> any inaccurate information in your patient record</li>
+                                <li><strong>Request deletion</strong> of your personal data (subject to legal retention requirements)</li>
+                                <li><strong>Withdraw consent</strong> to specific uses of your data at any time</li>
+                                <li><strong>Receive a copy</strong> of your diagnostic reports in digital or physical format</li>
+                            </ul>
+                            <p>To exercise any of these rights, please contact us using the details in Section 10 below.</p>
+                        </div>
+
+                        <div class="policy-section" id="pp-8">
+                            <h2><span class="section-num">08</span>Children's Privacy</h2>
+                            <p>We provide diagnostic services to patients of all ages, including minors. For patients under 18 years, a parent or legal guardian must provide consent for the procedure and is responsible for any information submitted on the minor's behalf. We treat all minor patient data with the same — or greater — level of protection as adult data.</p>
+                        </div>
+
+                        <div class="policy-section" id="pp-9">
+                            <h2><span class="section-num">09</span>Changes to This Policy</h2>
+                            <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with a revised effective date. For significant changes, we will notify registered patients via SMS or email. Continued use of our services after any changes constitutes your acceptance of the updated policy.</p>
+                        </div>
+
+                        <div class="policy-section" id="pp-10">
+                            <h2><span class="section-num">10</span>Contact Us</h2>
+                            <p>If you have questions, concerns, or requests relating to this Privacy Policy or your personal data, please reach out:</p>
+                            <ul>
+                                <li><strong>Email:</strong> <a href="mailto:Shubhimagingcentre@gmail.com">Shubhimagingcentre@gmail.com</a></li>
+                                <li><strong>Phone:</strong> <a href="tel:+919143186186">+91 9143 186186</a></li>
+                                <li><strong>Address:</strong> 102, First Floor, R.K. Prime Plus, Near Balaji Hall, 150ft Ring Road, Rajkot, Gujarat — 360001</li>
+                                <li><strong>Hours:</strong> Monday – Sunday, 9:00 AM – 8:00 PM</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- ══════════════════════════════════
+                 TERMS OF SERVICE TAB
+            ══════════════════════════════════ -->
+            <div class="tab-panel" id="panel-terms">
+                <div class="policy-layout">
+
+                    <!-- Sidebar TOC -->
+                    <aside class="toc">
+                        <div class="toc-title">On this page</div>
+                        <ul class="toc-list">
+                            <li><a href="#ts-1">Acceptance of Terms</a></li>
+                            <li><a href="#ts-2">Services Offered</a></li>
+                            <li><a href="#ts-3">Appointments &amp; Cancellations</a></li>
+                            <li><a href="#ts-4">Patient Responsibilities</a></li>
+                            <li><a href="#ts-5">Fees &amp; Payments</a></li>
+                            <li><a href="#ts-6">Diagnostic Reports</a></li>
+                            <li><a href="#ts-7">Limitations of Liability</a></li>
+                            <li><a href="#ts-8">Referral &amp; Second Opinions</a></li>
+                            <li><a href="#ts-9">Intellectual Property</a></li>
+                            <li><a href="#ts-10">Governing Law</a></li>
+                            <li><a href="#ts-11">Contact</a></li>
+                        </ul>
+                    </aside>
+
+                    <!-- Terms Text -->
+                    <article>
+                        <p style="font-size:13px;color:var(--muted);margin-bottom:48px;">Last updated: July 14, 2026 &nbsp;·&nbsp; Effective immediately</p>
+
+                        <div class="highlight-box">
+                            By booking an appointment or using any service at <strong>Shubh Imaging Centre</strong>, you agree to these Terms of Service. Please read them carefully. If you do not agree, please do not use our services.
+                        </div>
+
+                        <div class="policy-section" id="ts-1">
+                            <h2><span class="section-num">01</span>Acceptance of Terms</h2>
+                            <p>These Terms of Service ("Terms") govern your access to and use of diagnostic services provided by Shubh Imaging Centre ("Centre", "we", "us", "our"). By registering as a patient, booking an appointment, or visiting our website, you agree to be bound by these Terms and our Privacy Policy.</p>
+                            <p>These Terms are subject to change. Continued use of our services after any revision constitutes acceptance of the updated Terms.</p>
+                        </div>
+
+                        <div class="policy-section" id="ts-2">
+                            <h2><span class="section-num">02</span>Services Offered</h2>
+                            <p>Shubh Imaging Centre provides the following diagnostic services:</p>
+                            <ul>
+                                <li>MRI Scan (Magnetic Resonance Imaging)</li>
+                                <li>CT Scan — 32-Slice Computed Tomography</li>
+                                <li>Digital X-Ray</li>
+                                <li>Sonography / Ultrasound (USG)</li>
+                                <li>Pathology Laboratory Tests (blood work, tissue analysis, and panels)</li>
+                                <li>Comprehensive Health Checkup Packages</li>
+                            </ul>
+                            <p>All services are provided for diagnostic purposes only and do not constitute medical advice or treatment. Our radiologists provide reports that should be interpreted by your treating physician.</p>
+                        </div>
+
+                        <div class="policy-section" id="ts-3">
+                            <h2><span class="section-num">03</span>Appointments &amp; Cancellations</h2>
+                            <p>Appointments can be booked by phone, walk-in, or through our website contact form. Please note:</p>
+                            <ul>
+                                <li>Appointments are subject to availability and confirmation by our staff</li>
+                                <li>We request at least 2 hours notice if you need to cancel or reschedule</li>
+                                <li>Walk-in patients are accommodated based on availability; appointments are given priority</li>
+                                <li>Please arrive 10–15 minutes before your scheduled appointment for registration</li>
+                                <li>Bring your referring doctor's prescription, previous reports (if any), and a valid photo ID</li>
+                                <li>For MRI and CT scans, specific preparation instructions will be provided at the time of booking</li>
+                            </ul>
+                        </div>
+
+                        <div class="policy-section" id="ts-4">
+                            <h2><span class="section-num">04</span>Patient Responsibilities</h2>
+                            <p>As a patient, you are responsible for:</p>
+                            <ul>
+                                <li>Providing accurate, complete, and up-to-date personal and medical information</li>
+                                <li>Disclosing any known allergies, implants (pacemakers, metal plates, etc.), pregnancy, or claustrophobia before MRI or CT procedures</li>
+                                <li>Following all pre-procedure preparation instructions provided to you</li>
+                                <li>Behaving respectfully toward all staff and fellow patients</li>
+                                <li>Paying all applicable fees before or at the time of service</li>
+                                <li>Not misrepresenting your identity or using another person's identity for services</li>
+                            </ul>
+                            <div class="highlight-box">
+                                Failure to disclose critical medical information (such as metal implants before an MRI) that results in injury is the patient's responsibility. Our staff will conduct a safety screening before all imaging procedures.
+                            </div>
+                        </div>
+
+                        <div class="policy-section" id="ts-5">
+                            <h2><span class="section-num">05</span>Fees &amp; Payments</h2>
+                            <p>All fees are communicated to patients before procedures are performed. Payment is due at the time of service unless otherwise arranged.</p>
+                            <ul>
+                                <li>We accept cash, UPI, debit/credit cards, and net banking</li>
+                                <li>Fees are subject to change without prior notice; the price applicable is the one confirmed at the time of booking</li>
+                                <li>Receipts are provided for all transactions</li>
+                                <li>Refunds are considered on a case-by-case basis if a procedure cannot be completed due to equipment or staffing issues on our end</li>
+                                <li>No refund is provided if a patient fails to follow preparation instructions and the procedure cannot be performed</li>
+                            </ul>
+                        </div>
+
+                        <div class="policy-section" id="ts-6">
+                            <h2><span class="section-num">06</span>Diagnostic Reports</h2>
+                            <p>Reports are prepared by our qualified radiologists and pathologists and are typically available within the timeframe communicated at booking.</p>
+                            <ul>
+                                <li>Reports are provided in physical form and/or digitally as agreed</li>
+                                <li>Digital reports are shared via WhatsApp or email upon request</li>
+                                <li>Hard copies of imaging (films/CDs) may be available at an additional charge</li>
+                                <li>Reports reflect findings at the time of the examination and should be interpreted by your treating physician</li>
+                                <li>Shubh Imaging Centre does not provide diagnoses or treatment plans — reports are diagnostic aids</li>
+                            </ul>
+                            <p>We retain copies of all reports for a period as required by applicable law. Patients may request additional copies at any time.</p>
+                        </div>
+
+                        <div class="policy-section" id="ts-7">
+                            <h2><span class="section-num">07</span>Limitations of Liability</h2>
+                            <p>Shubh Imaging Centre provides diagnostic reporting services performed by qualified professionals following accepted medical standards. However:</p>
+                            <ul>
+                                <li>We are not liable for clinical decisions made by your treating physician based on our reports</li>
+                                <li>We are not responsible for delays caused by patient non-compliance with preparation instructions</li>
+                                <li>We are not liable for outcomes resulting from inaccurate information provided by the patient</li>
+                                <li>Technical limitations of diagnostic imaging may mean some conditions are not visible on a specific modality — our reports will indicate limitations where applicable</li>
+                            </ul>
+                            <p>Our total liability to any patient for any claim shall not exceed the fee paid for the specific diagnostic service in question.</p>
+                        </div>
+
+                        <div class="policy-section" id="ts-8">
+                            <h2><span class="section-num">08</span>Referral &amp; Second Opinions</h2>
+                            <p>Patients are always entitled to seek second opinions from another radiologist or diagnostic centre. If you believe a report contains an error, please contact us immediately. We will review the case with the reporting radiologist and respond within a reasonable timeframe.</p>
+                            <p>We value accuracy above all else and welcome clinical discussion in the interest of patient care.</p>
+                        </div>
+
+                        <div class="policy-section" id="ts-9">
+                            <h2><span class="section-num">09</span>Intellectual Property</h2>
+                            <p>All content on the Shubh Imaging Centre website — including text, layout, images, and design — is our property or is used with permission. You may not reproduce, distribute, or use any website content for commercial purposes without our written consent.</p>
+                            <p>Diagnostic reports generated by our radiologists are the intellectual output of our clinical professionals and are provided to patients for personal medical use only.</p>
+                        </div>
+
+                        <div class="policy-section" id="ts-10">
+                            <h2><span class="section-num">10</span>Governing Law</h2>
+                            <p>These Terms are governed by the laws of India and the state of Gujarat. Any disputes arising from these Terms or the use of our services shall be subject to the exclusive jurisdiction of the courts in Rajkot, Gujarat.</p>
+                            <p>We encourage patients to first attempt to resolve any dispute with us directly by contacting our centre — we are committed to fair and transparent resolution.</p>
+                        </div>
+
+                        <div class="policy-section" id="ts-11">
+                            <h2><span class="section-num">11</span>Contact</h2>
+                            <p>For any questions about these Terms of Service:</p>
+                            <ul>
+                                <li><strong>Email:</strong> <a href="mailto:Shubhimagingcentre@gmail.com">Shubhimagingcentre@gmail.com</a></li>
+                                <li><strong>Phone:</strong> <a href="tel:+919143186186">+91 9143 186186</a></li>
+                                <li><strong>Address:</strong> 102, First Floor, R.K. Prime Plus, Near Balaji Hall, 150ft Ring Road, Rajkot, Gujarat — 360001</li>
+                                <li><strong>Hours:</strong> Monday – Sunday, 9:00 AM – 8:00 PM</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="index.html">
+                <img src="media/site-logo.png" alt="Shubh Imaging Centre" class="footer-logo-img">
+            </a>
+            <span class="footer-copy">&copy; 2024 Shubh Imaging Centre. All rights reserved.</span>
+            <div class="footer-links">
+                <a href="policies.html#panel-privacy" onclick="switchTab('privacy', document.getElementById('btn-privacy'))">Privacy Policy</a>
+                <a href="policies.html#panel-terms"   onclick="switchTab('terms', document.getElementById('btn-terms'))">Terms of Service</a>
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchTab(name, btn) {
+            // Deactivate all tabs and panels
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            // Activate selected
+            btn.classList.add('active');
+            document.getElementById('panel-' + name).classList.add('active');
+            // Scroll to top of content smoothly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Auto-switch tab based on URL hash (e.g. policies.html#terms)
+        document.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '').replace('panel-', '');
+            if (hash === 'terms') {
+                switchTab('terms', document.getElementById('btn-terms'));
+            }
+        });
+    </script>
+</body>
+
+</html>

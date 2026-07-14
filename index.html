@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shubh Imaging Centre - Rajkot's best diagnostic center offering MRI, CT Scan, X-Ray, Sonography, and Pathology services.">
+    <meta name="keywords" content="MRI, CT Scan, X-Ray, Sonography, Diagnostic Center, Rajkot, Healthcare">
+    <title>Shubh Imaging Centre - Better Imaging, Better Diagnosis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=switzer:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <a href="#home">
+                        <img src="media/site-logo.png" alt="Shubh Imaging Centre" class="logo-img">
+                    </a>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#team" class="nav-link">Doctors</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="tel:+919143186186" class="nav-cta">Call Now</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-grid"></div>
+        <div class="container hero-layout">
+            <div class="hero-left">
+                <div class="hero-eyebrow">
+                    <span class="pulse-dot"></span>
+                    Rajkot's Trusted Diagnostic Centre
+                </div>
+                <h1 class="hero-heading">
+                    Better Imaging.<br>
+                    <span class="hero-accent">Better Diagnosis.</span>
+                </h1>
+                <p class="hero-desc">Advanced MRI, CT Scan, X-Ray, Sonography &amp; Pathology — all under one roof.
+                    Accurate results fast, with compassionate care.</p>
+                <div class="hero-actions">
+                    <button class="btn-hero-primary"
+                        onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                        Book Appointment
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </button>
+                    <a href="tel:+919143186186" class="btn-hero-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.73-.73a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        +91 9143 186186
+                    </a>
+                </div>
+                <div class="hero-trust-bar">
+                    <div class="trust-item">
+                        <strong>5,000+</strong>
+                        <span>Patients Served</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <strong>100%</strong>
+                        <span>Accuracy Rate</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <strong>7 Days</strong>
+                        <span>Open All Week</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=700&h=780&fit=crop"
+                        alt="Medical Imaging Technology" class="hero-img">
+                    <div class="hero-img-card">
+                        <div class="card-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="card-label">Report Ready</div>
+                            <div class="card-value">In 30 minutes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Services Strip -->
+    <div class="marquee-strip">
+        <div class="marquee-track">
+            <span>MRI Scan</span><span class="dot">·</span>
+            <span>32-Slice CT Scan</span><span class="dot">·</span>
+            <span>Digital X-Ray</span><span class="dot">·</span>
+            <span>Sonography (USG)</span><span class="dot">·</span>
+            <span>Pathology Lab</span><span class="dot">·</span>
+            <span>Health Checkup</span><span class="dot">·</span>
+            <span>MRI Scan</span><span class="dot">·</span>
+            <span>32-Slice CT Scan</span><span class="dot">·</span>
+            <span>Digital X-Ray</span><span class="dot">·</span>
+            <span>Sonography (USG)</span><span class="dot">·</span>
+            <span>Pathology Lab</span><span class="dot">·</span>
+            <span>Health Checkup</span><span class="dot">·</span>
+            <span>MRI Scan</span><span class="dot">·</span>
+            <span>32-Slice CT Scan</span><span class="dot">·</span>
+            <span>Digital X-Ray</span><span class="dot">·</span>
+            <span>Sonography (USG)</span><span class="dot">·</span>
+            <span>Pathology Lab</span><span class="dot">·</span>
+            <span>Health Checkup</span><span class="dot">·</span>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-eyebrow">DIAGNOSTIC MODALITIES</div>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-sub">High-precision imaging and lab diagnostics — all under one roof.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="sc-number">01</div>
+                    <div class="sc-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="12" rx="10" ry="4" />
+                            <path d="M2 12a10 4 0 0 0 20 0" />
+                            <path d="M12 2v20" />
+                        </svg>
+                    </div>
+                    <h3>MRI Scan</h3>
+                    <p>Safe, non-invasive imaging with no radiation. Detailed internal imaging for accurate diagnosis.
+                    </p>
+                    <ul class="sc-list">
+                        <li>No radiation</li>
+                        <li>High resolution</li>
+                        <li>Fast results</li>
+                    </ul>
+                    <a href="#contact" class="sc-link">Book Now <span>→</span></a>
+                </div>
+                <div class="service-card">
+                    <div class="sc-number">02</div>
+                    <div class="sc-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            <path d="M11 7v8M8 11h6" />
+                        </svg>
+                    </div>
+                    <h3>CT Scan</h3>
+                    <p>Advanced 32-slice technology for fast, high-quality diagnosis. Ideal for trauma, brain, and
+                        chest.</p>
+                    <ul class="sc-list">
+                        <li>Advanced technology</li>
+                        <li>Fast imaging</li>
+                        <li>Precise results</li>
+                    </ul>
+                    <a href="#contact" class="sc-link">Book Now <span>→</span></a>
+                </div>
+                <div class="service-card">
+                    <div class="sc-number">03</div>
+                    <div class="sc-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <path d="M12 3v18M3 12h18" />
+                        </svg>
+                    </div>
+                    <h3>Digital X-Ray</h3>
+                    <p>Instant, accurate diagnosis for bone fractures and joint issues. Low radiation with digital
+                        results.</p>
+                    <ul class="sc-list">
+                        <li>Instant results</li>
+                        <li>Low radiation</li>
+                        <li>Accurate</li>
+                    </ul>
+                    <a href="#contact" class="sc-link">Book Now <span>→</span></a>
+                </div>
+                <div class="service-card">
+                    <div class="sc-number">04</div>
+                    <div class="sc-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 12h4l3-9 4 18 3-9h6" />
+                        </svg>
+                    </div>
+                    <h3>Sonography (USG)</h3>
+                    <p>Safe, painless ultrasound imaging for pregnancy monitoring and soft tissue assessments.</p>
+                    <ul class="sc-list">
+                        <li>Painless</li>
+                        <li>Safe for all ages</li>
+                        <li>Reliable</li>
+                    </ul>
+                    <a href="#contact" class="sc-link">Book Now <span>→</span></a>
+                </div>
+                <div class="service-card">
+                    <div class="sc-number">05</div>
+                    <div class="sc-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10 2v7.5M14 2v7.5M8.5 6h7M6.5 12h11M4.5 18h15" />
+                            <path d="M21 22H3a1 1 0 0 1-1-1v-2a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v2a1 1 0 0 1-1 1z" />
+                        </svg>
+                    </div>
+                    <h3>Pathology Lab</h3>
+                    <p>Complete diagnostics — blood tests, tissue analysis, and comprehensive health panels.</p>
+                    <ul class="sc-list">
+                        <li>Accurate tests</li>
+                        <li>Fast reports</li>
+                        <li>Expert analysis</li>
+                    </ul>
+                    <a href="#contact" class="sc-link">Book Now <span>→</span></a>
+                </div>
+                <div class="service-card">
+                    <div class="sc-number">06</div>
+                    <div class="sc-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                    </div>
+                    <h3>Health Checkup</h3>
+                    <p>Comprehensive health packages for age 30+. Early disease detection with expert review.</p>
+                    <ul class="sc-list">
+                        <li>Preventive care</li>
+                        <li>Early detection</li>
+                        <li>Comprehensive</li>
+                    </ul>
+                    <a href="#contact" class="sc-link">Book Now <span>→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-block">
+                <div class="stat-num">5,000+</div>
+                <div class="stat-label">Patients Served</div>
+            </div>
+            <div class="stat-block">
+                <div class="stat-num">6+</div>
+                <div class="stat-label">Diagnostic Services</div>
+            </div>
+            <div class="stat-block">
+                <div class="stat-num">100%</div>
+                <div class="stat-label">Accuracy Rate</div>
+            </div>
+            <div class="stat-block">
+                <div class="stat-num">30 min</div>
+                <div class="stat-label">Avg. Report Time</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-img-col">
+                    <div class="about-img-stack">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500&h=600&fit=crop"
+                            alt="Shubh Imaging Centre facility" class="about-img-main">
+                        <div class="about-img-badge">
+                            <div class="badge-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="badge-title">Quality Assured</div>
+                                <div class="badge-sub">100% Accuracy Rate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text-col">
+                    <div class="section-eyebrow">ABOUT US</div>
+                    <h2 class="section-title left-align">Rajkot's Premier<br>Diagnostic Centre</h2>
+                    <p class="about-para">Shubh Imaging Centre is dedicated to providing accurate, reliable, and
+                        compassionate healthcare. With experienced radiologists, pathologists, and medical
+                        practitioners, we use cutting-edge diagnostic technology to ensure precise results.</p>
+                    <p class="about-para">Our mission is to make quality healthcare accessible to everyone through early
+                        diagnosis and accurate imaging. Accurate diagnosis is the foundation of effective treatment.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="af-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div><span>Advanced 32-slice CT &amp; high-field MRI</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="af-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div><span>Reports in as fast as 30 minutes</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="af-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div><span>Open 7 days a week, 9 AM – 8 PM</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="af-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div><span>R.K. Prime Plus, Near Balaji Hall, 150ft Ring Road, Rajkot</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-primary-solid">Book Appointment →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-eyebrow">OUR GUARANTEES</div>
+                <h2 class="section-title">Why Choose Shubh Imaging?</h2>
+                <p class="section-sub">Committed to the highest standards of diagnostic precision and patient-first
+                    care.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <rect x="2" y="2" width="20" height="8" rx="2" />
+                            <rect x="2" y="14" width="20" height="8" rx="2" />
+                            <line x1="6" y1="6" x2="6.01" y2="6" />
+                            <line x1="6" y1="18" x2="6.01" y2="18" />
+                        </svg></div>
+                    <h3>Advanced Technology</h3>
+                    <p>State-of-the-art diagnostic equipment for precise and reliable results.</p>
+                    <span class="why-num">01</span>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg></div>
+                    <h3>Expert Team</h3>
+                    <p>Experienced radiologists, pathologists, and medical practitioners.</p>
+                    <span class="why-num">02</span>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg></div>
+                    <h3>Fast Reports</h3>
+                    <p>Quick turnaround time for patient convenience and timely treatment.</p>
+                    <span class="why-num">03</span>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg></div>
+                    <h3>Patient Care</h3>
+                    <p>Compassionate service focused on patient comfort and satisfaction.</p>
+                    <span class="why-num">04</span>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                        </svg></div>
+                    <h3>Complete Solutions</h3>
+                    <p>All major diagnostic services under one roof for your convenience.</p>
+                    <span class="why-num">05</span>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="12" y1="1" x2="12" y2="23" />
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                        </svg></div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Competitive rates without compromising on quality of service.</p>
+                    <span class="why-num">06</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-eyebrow">Doctors</div>
+                <h2 class="section-title">Experts Who Care, Not Just Consult</h2>
+                <p class="section-sub">Experienced medical professionals dedicated to your diagnostic accuracy and
+                    health.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member-card">
+                    <div class="member-image-container">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=450&fit=crop"
+                            alt="Dr. Jay Barsiya" class="member-img">
+                        <span class="member-experience-tag">12+ Yrs Exp</span>
+                    </div>
+                    <div class="member-info-overlay">
+                        <div class="member-meta">
+                            <h3>Dr. Jay Barsiya</h3>
+                            <p class="member-role">MD, Radiologist</p>
+                            <div class="member-rating"><span class="star">★</span> 5.0 <span
+                                    class="rating-count">(112)</span></div>
+                        </div>
+                        <a href="#contact" class="member-action-btn"><svg width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <div class="member-image-container">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&h=450&fit=crop"
+                            alt="Dr. Anand Vachani" class="member-img">
+                        <span class="member-experience-tag">15+ Yrs Exp</span>
+                    </div>
+                    <div class="member-info-overlay">
+                        <div class="member-meta">
+                            <h3>Dr. Anand Vachani</h3>
+                            <p class="member-role">Pathologist</p>
+                            <div class="member-rating"><span class="star">★</span> 4.9 <span
+                                    class="rating-count">(87)</span></div>
+                        </div>
+                        <a href="#contact" class="member-action-btn"><svg width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <div class="member-image-container">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=450&fit=crop"
+                            alt="Dr. Chirag Parsana" class="member-img">
+                        <span class="member-experience-tag">10+ Yrs Exp</span>
+                    </div>
+                    <div class="member-info-overlay">
+                        <div class="member-meta">
+                            <h3>Dr. Chirag Parsana</h3>
+                            <p class="member-role">General Practitioner</p>
+                            <div class="member-rating"><span class="star">★</span> 5.0 <span
+                                    class="rating-count">(94)</span></div>
+                        </div>
+                        <a href="#contact" class="member-action-btn"><svg width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+
+        <!-- TOP: Dark band — heading + info cards -->
+        <div class="contact-top">
+            <div class="container">
+                <div class="contact-top-inner">
+                    <div class="contact-top-text">
+                        <div class="section-eyebrow light">GET IN TOUCH</div>
+                        <h2 class="contact-heading">Book Your<br>Appointment</h2>
+                        <p class="contact-desc">Open every day of the week — visit us, call, or drop a message.</p>
+                    </div>
+                    <div class="contact-cards">
+                        <div class="ccard">
+                            <div class="ccard-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="ccard-label">Location</div>
+                            <div class="ccard-value">102, R.K. Prime Plus,<br>Near Balaji Hall, 150ft Ring Road,<br>Rajkot — 360001</div>
+                        </div>
+                        <div class="ccard">
+                            <div class="ccard-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.73-.73a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div class="ccard-label">Phone</div>
+                            <div class="ccard-value"><a href="tel:+919143186186">+91 9143 186186</a><br><a href="tel:+919143187187">+91 9143 187187</a></div>
+                        </div>
+                        <div class="ccard">
+                            <div class="ccard-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div class="ccard-label">Email</div>
+                            <div class="ccard-value"><a href="mailto:Shubhimagingcentre@gmail.com">Shubhimagingcentre<br>@gmail.com</a></div>
+                        </div>
+                        <div class="ccard">
+                            <div class="ccard-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div class="ccard-label">Hours</div>
+                            <div class="ccard-value">Monday – Sunday<br>9:00 AM – 8:00 PM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTTOM: Map left + Form right -->
+        <div class="contact-bottom">
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps?q=102+RK+Prime+Plus+Near+Balaji+Hall+150ft+Ring+Road+Rajkot+Gujarat+360001&output=embed"
+                    width="100%" height="100%"
+                    style="border:0; display:block;"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Shubh Imaging Centre Location">
+                </iframe>
+            </div>
+            <div class="contact-form-panel">
+                <h3 class="form-title">Send Us a Message</h3>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="Full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Service Needed</label>
+                        <select>
+                            <option value="">Select a service</option>
+                            <option>MRI Scan</option>
+                            <option>CT Scan</option>
+                            <option>Digital X-Ray</option>
+                            <option>Sonography (USG)</option>
+                            <option>Pathology Lab</option>
+                            <option>Health Checkup</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Any additional information..." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Book Appointment →</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home"><img src="media/site-logo.png" alt="Shubh Imaging Centre"
+                            class="footer-logo-img"></a>
+                    <p class="footer-desc">A diagnostic centre for patients who want faster reports, cleaner facilities,
+                        and a calmer experience.</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#team">Doctors</a></li>
+                            <li><a href="policies.html">Privacy &amp; Legal</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#contact">MRI Scan</a></li>
+                            <li><a href="#contact">CT Scan</a></li>
+                            <li><a href="#contact">Digital X-Ray</a></li>
+                            <li><a href="#contact">Sonography</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://www.facebook.com/shubhimagingcentre" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/shubh.imaging/" target="_blank">Instagram</a></li>
+                            <li><a href="mailto:Shubhimagingcentre@gmail.com">Email Us</a></li>
+                            <li><a href="tel:+919143186186">Call Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2024 Shubh Imaging Centre. All rights reserved.</span>
+                <span>102, R.K. Prime Plus, Near Balaji Hall, 150ft Ring Road, Rajkot</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
